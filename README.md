@@ -2,7 +2,7 @@
 
 It is AI-aplied Drone program.<br>
 First, I made Forest-Fire-Detector AI by Teachable Machine that is useful trasfer learning tool.<br>
-This model classifies two classes(fire vs nonfire). I trained this model with about 14,000 photos. The photos are consisted with fire class(forest-fire, smoke),and nonfire class(dusty, foggy landscape, huge clouds over mountain, reddish sunset, nonfire photos). Database where I collected the images is Kaggle
+This model classifies two classes(fire vs nonfire). I trained this model with about 14,000 photos. The photos consist of fire class(forest-fire, smoke),and nonfire class(dusty, foggy landscape, huge clouds over mountain, reddish sunset, nonfire photos). Database where I collected the images is Kaggle
 
 <br>
 <br>
