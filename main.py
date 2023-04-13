@@ -4,6 +4,7 @@ from djitellopy import tello
 import cv2
 import keyboard
 import threading
+import winsound as sd
 
 #드론 실행 drone operate
 drone = tello.Tello()
@@ -62,6 +63,10 @@ drone.takeoff()
 sleep(1)
 patrol_thread()
 '''
+def alertsound():
+    fr = 2000    # range : 37 ~ 32767
+    du = 1000     # 1000 ms == 1second
+    sd.Beep(fr, du) #winsound.Beep(frequency, duration)
 
 while True:
     frame = drone.get_frame_read().frame
@@ -79,6 +84,7 @@ while True:
     else:
         cv2.putText(frame, 'fire', (0, 25), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 0))
         print('산불')
+        alertsound()
 
     cv2.imshow("VideoFrame", frame)
     cv2.waitKey(10)
