@@ -9,5 +9,6 @@ This model classifies two classes(fire vs nonfire). I trained this model with ab
 Tello drone의 카메라를 통해 image를 받아와서 AI model에 입력하고 분류시킴. tello drone은 일정한 구역 반복적으로 움직이면서 이미지를 받아오는 매개체 역할임. 분류 시에 산불이 감지되면, drone을 실행시킨 컴퓨터에 경고음이 울림.  
 <br>
 <br>
+<br>
 
 converted_keras is trained model parameter file. main.py refers this keras parameter.
